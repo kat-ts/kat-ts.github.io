@@ -1,0 +1,7 @@
+_site/
+assets/images/drafts
+.stfolder
+.stignore
+.jekyll-cache/
+Gemfile.lock
+.sass-cache/

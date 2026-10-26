@@ -1,0 +1,154 @@
+/* Palette */
+:root {
+  --bg: #1a0808;
+  --text: #f5e6c8;
+  --accent: #c9a84c;
+  --muted: #8a7a5a;
+  --border: rgba(201, 168, 76, 0.25);
+  --border-strong: rgba(201, 168, 76, 0.5);
+  --track: #3a1a1a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', 'Motiva Sans', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 1rem;
+  line-height: 1.6;
+}
+
+/* Nav */
+.site-title {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a[aria-current] {
+  color: var(--accent);
+}
+
+/* Headings */
+h1, h2 {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+h1 { font-size: 1.4rem; }
+h2 { font-size: 1.1rem; }
+
+/* Links */
+a { color: var(--accent); }
+
+/* Cards / rows (projects, system items, etc.) */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.card:last-child { border-bottom: none; }
+
+.card img {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.card .title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.card .desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.card .date {
+  flex: 0 0 130px;
+  text-align: right;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Tag pills */
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--muted);
+  margin-right: 6px;
+}
+
+/* Section wrapper (optional, for the "panel" feel) */
+.panel {
+  border: 1px solid var(--border);
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+.site-frame {
+  border: 1px solid var(--border-strong);
+  outline: 1px solid rgba(201, 168, 76, 0.3);
+  outline-offset: 4px;
+  padding: 24px;
+  margin: 1rem; /* gives room for the outline-offset so it doesn't clip */
+}
+
+/* Quotes */
+blockquote {
+  border-left: 2px solid var(--accent);
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 0 0.5rem 1.2rem;
+  text-align: left;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+}

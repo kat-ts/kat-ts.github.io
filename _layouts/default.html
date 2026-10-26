@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="icon" type="image/png" href="/assets/images/kat.png" sizes="32x32">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header>
+    <a href="/" class="site-title">Katherine Tsypkaikina</a>
+    <nav>
+      <a href="/projects/">Projects</a>
+      <a href="/system/">System</a>
+      <a href="/personal/">Personal</a>
+      <a href="/about/">About</a>
+    </nav>
+  </header>
+  <div class="site-frame">
+    <main>
+      {{ content }}
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2026 · Katherine Tsypkaikina</p>
+  </footer>
+</body>
+</html>
