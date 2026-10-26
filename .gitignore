@@ -1,7 +1,8 @@
-_site/
-assets/images/drafts
-.stfolder
-.stignore
 .jekyll-cache/
-Gemfile.lock
 .sass-cache/
+.stfolder/
+_site/
+.DS_Store
+.stignore
+assets/images/drafts
+Gemfile.lock
