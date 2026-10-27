@@ -154,6 +154,7 @@ footer {
 }
 
 footer a {
+  display: inline-block;
   color: var(--muted);
   text-decoration: none;
   margin: 0 4px;
